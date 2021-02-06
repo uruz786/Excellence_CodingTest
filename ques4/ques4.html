@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    
+    <script type="text/javascript">
+        function CheckForBlank() {
+        if(document.getElementById('first').value=="" || !document.getElementById('check').checked) {
+            alert("enter fields properly");
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit=" return CheckForBlank()">
+        <input  type="text" name="firstname" id="first"/>
+        <input  type="checkbox" name="checkme" id="check" />
+        <input  type="submit" value="submit"/>
+    </form>
+</body>
